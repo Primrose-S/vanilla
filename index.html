@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/index.css">
+
 </head>
 <body>
+    <div class="weather-app">
     <header>
-        <form action="">
-            <input type="search" placeholder="enter a city" required />
-            <input type="submit" value="search" />
+        <form class="search-form">
+            <input type="search" placeholder="enter a city" required class="search-input">
+            <input type="submit" value="search" class="search-button" />
         </form>
     </header>
     <main>
+        <div class="app-data">
         <div>
-        <h1>
+        <h1 class="city">
             Paris
         </h1>
-        <p>
+        <p class="details">
             Tuesday 21:30, scatted clouds 
             <br/>
-            Humidity: 66% , wind:4.25km/h
+            Humidity:<span> 66% </span>, wind: <span>4.25km/h</span>
         </p>
+    </div class="temperature-container">
+    <div >
+        <div class="temp-icon">
+        🌤️</div>
+        <div class="app-temp">13</div>
+        <div class="temp-unites"> &deg;c</div>
     </div>
-    <div>
-        🌤️ 13&deg;c
     </div>
     </main>
     <footer>
@@ -35,5 +43,6 @@
         and
         <a href="#" target="_blank">on vercel</a>
     </footer>
+</div>
 </body>
 </html>
